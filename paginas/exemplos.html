@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Exemplos</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<header>
+    <div>
+        <nav class="text-center">
+            <a target="_blank" href="../#geral">Geral</a>
+            <a target="_blank" href="../#diferencas">Diferenças</a>
+            <a target="_blank" href="#">Exemplos</a>
+        </nav>
+    </div>
+</header>
+
+
+<body>
+<div class="text-center">
+    <iframe src="https://drive.google.com/file/d/1b_945i2m-a6pgUQMkbf20CfZyUYYudBV/preview" width="1080"
+            height="480"
+            allow="autoplay"></iframe>
+</div>
+<section id="request-reponse">
+
+    <div>
+        <h2 class="request">Request (definição na internet)</h2>
+
+        <p>
+            A Request ou requisição traduzindo diretamente para português, é o pedido que um cliente realiza a nosso
+            servidor. Esse pedido contém uma série de dados que são usados para descrever exatamente o que o cliente
+            precisa. Vamos pensar que um cliente precisa cadastrar um novo produto, ele deve passar todos os dados
+            necessários para o cadastro acontecer de maneira correta, inclusive os dados que foram digitados pelo
+            usuário em um formulário, no caso de uma aplicação web. No navegador toda vez que trocamos de página ou
+            apertamos enter na barra de endereço uma nova request é feita. Independente se estamos apenas pedindo a
+            exibição de uma página, cadastrando um novo recurso, atualizando ou excluindo.
+        </p>
+
+
+        <h2 class="response">Response</h2>
+
+        <p>Vimos que o cliente envia uma Request (requisição) ao servidor. Essa requisição possui todas as informações
+            acerca do que o cliente espera receber de volta. O servidor web ao receber essas informações precisa enviar
+            uma
+            resposta ao cliente, nesse ponto entra a Response. A Response (resposta) nada mais é do que a resposta que o
+            servidor envia ao cliente. Essa resposta pode conter os dados que realmente o cliente esperava receber ou
+            uma
+            resposta informando que alguma coisa deu errado.
+        </p>
+    </div>
+
+    <div>
+        <img class="pad-right-40" src="../images/request.png" alt="Ilustração Request" height="150"/>
+        <img class="pad-right-40" src="../images/http-response.png" alt="Ilustração Response" height="180"/>
+    </div>
+</section>
+
+<section id="passo-a-passo">
+
+    <div class="text-center">
+        <h2>Passo a Passo</h2>
+        <h2>Request -> Server -> Response</h2>
+
+        <img class="mb-40" src="../images/http%20communication.png" alt="Exemplo do funcionamento HTTP">
+    </div>
+
+    <div class="text-center">
+        <!-- REQUEST -->
+        <h2 class="request">Request</h2>
+
+        <img class="mb-40" src="../images/exemplo.png" alt="Exemplo request" width="1100"/>
+
+        <h3 class="linha mb-40">Linha de pedido</h3>
+
+        <p class="mb-40">A linha de pedido é composta pelo <a target="_blank"
+                                                              href="https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Methods">identificador
+            do metodo (GET,POST,ETC...)</a>, URI e a versão do protocolo
+            <a target="_blank" href="../#diferencas">(HTTP 0.9,1.0,1.1,1.2)</a>.
+        </p>
+
+        <h3 class="mb-40 cabecalho1">Cabeçalho</h3>
+
+        <p class="mb-40">Já o cabeçalho é onde passamos as informações sobre o nosso request, nele pode haver inúmeros
+            <a target="_blank" href="https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Headers">parâmetros</a>, que
+            irão determinar o comportamento do servidor com o nosso request. Podemos ver como exemplo o User-Agent, que
+            informa qual navegador esta sendo feito este request, também temos como exemplo cookie, que passa as
+            informações em cookie do navegador para o servidor.
+        </p>
+
+        <h3 class="mb-40 corpo1">Corpo</h3>
+
+        <p class="mb-40">
+            O corpo do request irá conter as informações que serão enviadas para o servidor, exemplo: Se meu request é
+            um request de metodo POST, de um formulario, eu enviarei no corpo nome, telefone, email...
+        </p>
+
+        <hr class="mb-40">
+
+        <!-- RESPONSE -->
+        <h2 class="response">Response</h2>
+
+        <img class="mb-40" src="../images/exemplo-2.png" alt="Exemplo request"/>
+
+        <h2 class="linhastatus mb-40">Linha de Status</h2>
+
+        <p class="mb-40">A linha de status contem a versão do <a target="_blank" href="../#diferencas">protocolo HTTP</a>, <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Status">codigo de
+            status</a> e o texto de status </p>
+
+        <h2 class="cabecalho2 mb-40">Cabeçalho</h2>
+
+        <p class="mb-40">O cabeçalho da Response funciona da mesma forma do cabeçalho do request, trazendo informações adicionais
+            sobre a response, como o tipo de dado como resposta, o nome do server, a data...</p>
+
+        <h2 class="corpo2 mb-40">Corpo</h2>
+
+        <p class="mb-40">Enfim, a parte mais importante da response o corpo, onde contem as informações que foram solicitadas no
+            request, usando meu exemplo passado se eu requsitei entrar no site stackoverflow, a response conterá todo
+            conteudo necessario para o navegador processar e me apresentar a pagina.</p>
+
+        <h2>Exemplos no vídeo acima.</h2>
+
+    </div>
+
+</section>
+
+<footer></footer>
+
+</body>
+</html>

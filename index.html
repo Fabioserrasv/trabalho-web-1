@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>HTTP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<header>
+    <div>
+        <nav class="text-center">
+            <a href="#geral">Geral</a>
+            <a href="#diferencas">Diferenças</a>
+            <a href="paginas/exemplos.html">Exemplos</a>
+        </nav>
+    </div>
+</header>
+
+
+<section id="geral">
+    <div>
+        <h2>Funcionamento Geral</h2>
+
+        <p>
+            HyperText Transfer Protocol, um protocolo que é utilizado na camada de aplicação, a sétima camada do modelo
+            OSI
+            (o que não é assunto para eu falar aqui), este protocolo trabalha em conjunto com o protocolo TCP/IP, um
+            protocolo que funciona com a transmissão e endereçamento de dados na Internet.
+        </p>
+
+        <p>
+            O HTTP trabalha com um modelo de “Request” e “Response”, ou seja, pedido e resposta. Digamos que você quer
+            acessar o site <a href="https://stackoverflow.com">stackoverflow</a>, para acessar as informações, eu
+            acessarei a URL do site, ao acessar a URL, o
+            meu navegador irá enviar um REQUEST(pedido) para o servidor, esse pedido chegará ao servidor e ira ser
+            processado pelo mesmo, quando ele terminar de processar toda a informação que eu requisitei ele irá enviar
+            de
+            volta para o meu navegador uma RESPONSE (resposta).
+        </p>
+
+        <h3 class="request">Request</h3>
+        <p>
+            Pedido feito ao servidor, composto por linha de pedido, cabeçalho e corpo.
+        </p>
+
+        <h3 id="response">Response</h3>
+        <p>
+            Resposta do servidor, composto por linha de status, cabeçalho e corpo.
+        </p>
+
+
+    </div>
+
+    <div>
+        <img src="images/geral.jpg" alt="Ilustração HTTP">
+        <img src="images/geral2.png" alt="Ilustração HTTP">
+    </div>
+</section>
+
+<section id="diferencas">
+    <div>
+        <h2>Diferenças HTTP 1.E 1 1.2 </h2>
+
+        <p>
+            O HTTP tem sido usado desde 1991, sendo que a versão HTTP/1.0 foi liberada em 1996 com finalidade de suprir
+            a necessidade de transferir não apenas texto.
+            Sendo assim passou-se a considerar dados mais ricos, metadados da requisição e resposta e negociação de
+            conteúdo.
+            A versão, 1.1, foi disponibilizada em 1999. Seu lançamento é considerado um grande marco e define o padrão
+            que temos hoje na internet. Foi apresentado com algumas melhorias na performance.
+            Com a chegada dos anos 2000 e a grande demanda na internet foi criado então o http/2 com grandes melhorias
+            em sua performance e no transporte de informações.
+        </p>
+
+        <h3>Única conexão e multiplexação: </h3>
+
+        <p>
+            Uma diferença significativa entre http 1.1 e 2 é que o protocolo de http 1.1 é sequencial, desse modo abre
+            somente uma conexão TCP solicita um arquivo, e somente após recebê-lo solicita o próximo.
+            Já no http/2 a conexão será persistente e precisará somente de uma, onde será possivel que todas requisições
+            sejam respondidas em um tempo menor.
+        </p>
+
+        <h3>Camada de enquadramento binário: </h3>
+
+        <p>
+            Receber toneladas de conteúdo de mídia através de fluxos individuais enviados um a um é ineficiente e
+            consome muitos recursos.
+            Uma das alterações feitas no HTTP/2 ajudaram a estabelecer uma nova camada de enquadramento binário para
+            responder a estas grandes demandas de informação.
+            Esta camada permite ao cliente e ao servidor dividir a carga útil do HTTP em uma sequência de frames
+            pequenos, independentes e manejáveis entre si.
+            Após isto a informação é então remontada no outro extremo.
+        </p>
+
+        <h3>Priorização das requisições: </h3>
+
+        <p>Possibilia a priorização de alguns elementos.
+            Pode-se citar um exemplo onde são requisitados arquivos CSS e arquivos JS, onde no HTTP/2 o comportamento do
+            navegador será de priorizar primeiro os arquivos CSS,
+            mesmo que sua requisição na ordem do DOM venha depois dos JS.
+        </p>
+
+        <h3>Server Push: </h3>
+
+        <p>
+            Permite ao servidor enviar múltiplas respostas ao cliente, a partir de uma única requisição, sem que o
+            cliente tenha solicitado explicitamente.
+            Um exemplo seria: o navegador de internet requisita o arquivo HTML da página; o servidor responde com o
+            arquivo requisitado e já envia também o arquivo CSS, JavaScript, ícones e outras coisas mais.
+        </p>
+
+        <h3>Segurança e criptografia de dados: </h3>
+
+        <p>
+            O protocolo HTTP/2 foi implementado para trabalhar com ou sem criptografia.
+            No entanto, os principais navegadores declararam que irão suportar HTTP/2 somente com criptografia, sendo
+            necessário então a utilização de um certificado SSL.
+        </p>
+
+        <h3>Compressão automática: </h3>
+
+        <p>As requisições no HTTP possuem cabeçalhos com informações importantes sobre os recursos.
+            Com o HTTP/2 os cabeçalhos são comprimidos, reduzindo assim o tamanho de cada transferência além de também
+            manter e atualizar cabeçalhos vistos anteriormente.
+            Além disso, a compressão de dados através do GZIP, que precisa ser habilitada no HTTP/1.1, se torna padrão
+            na versão 2. </p>
+    </div>
+</section>
+
+<footer></footer>
+</body>
+</html>

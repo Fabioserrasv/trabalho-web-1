@@ -1,0 +1,200 @@
+/* EU NÃO MEXO COM CSS */
+/* EU ODEIO CSS */
+
+* {
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(#002f5f, white),
+    linear-gradient(#379bff, #379bff);
+    background-clip: content-box, padding-box;
+}
+
+h1, h2, h3, h4{
+    margin: 0;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+p{
+    margin: 0;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+/* header */
+
+header{
+
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    top:0;
+    z-index: 999;
+    background-color: rgba(0, 0 , 0, 0.2);
+    background-clip: content-box, padding-box;
+}
+
+nav a{
+    text-shadow: 3px 3px black;
+}
+
+/* -------*/
+
+a:link, a:visited{
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    color: deeppink;
+    text-decoration: underline;
+}
+a:active{
+    color:white;
+}
+
+section{
+    padding: 0 20% 0 20%;
+    background-color: rgba(0, 0 , 0, 0.5);
+    background-clip: content-box, padding-box;;
+}
+
+section div p{
+    font-size: 1.2em;
+    padding-right: 2px;
+    color: white;
+    opacity: 70%;
+}
+
+/* Geral */
+
+#geral{
+    display: flex;
+    margin-top: 21px;
+}
+
+#geral div h2{
+    color: #ffd4e5;
+}
+
+.request{
+    color: green;
+}
+
+.response{
+    color: yellow;
+    margin-bottom: 0;
+}
+
+.linha{
+    color: #00ff00;
+}
+
+.cabecalho1{
+    color: rgb(180, 0, 255);
+}
+
+.corpo1{
+    color: rgb(255, 138, 0);
+}
+
+.linhastatus{
+    color: rgb(0, 168, 236);
+}
+
+.corpo2{
+    color: rgb(255, 52, 31);
+}
+
+.cabecalho2{
+    color: rgb(175, 136, 184);
+}
+
+#geral div h4{
+    color: #ffd4e5;
+}
+
+#geral div p a:link, a:visited {
+    color: royalblue;
+}
+
+#geral img{
+    opacity: 80%;
+    float: right;
+}
+
+/* Diferenças */
+
+#diferencas{
+    display: flex;
+    text-align: center;
+}
+
+#diferencas div h2{
+    color: #ffd4e5;
+}
+
+#diferencas div h3{
+    color: white;
+}
+
+/* Exs*/
+
+#request-reponse{
+    height: auto;
+    display: flex;
+}
+
+iframe{
+    margin-top: 30px
+}
+
+.text-center{
+    text-align: center;
+}
+
+.text-center a{
+    margin-right: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+/* passo a passo */
+
+#passo-a-passo{
+    height: 1900px;
+}
+
+#passo-a-passo h2{
+    margin: 0;
+    padding: 0;
+}
+
+#passo-a-passo div p a:link, a:visited{
+    margin-right: 0;
+    text-decoration: none;
+    font-size: 1em;
+    color: black;
+}
+
+#passo-a-passo div p a:hover {
+    color: royalblue;
+}
+
+.pad-right-40{
+    padding-right: 40px;
+}
+
+.mb-40{
+    margin-bottom: 40px !important;
+}
